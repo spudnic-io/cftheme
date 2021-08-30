@@ -974,11 +974,11 @@ $accentFontStyle: normal;
 // Icons
 @font-face {
   font-family: "icons";
-  src: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/icons.eot?v=12799323123844063080');
-  src: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/icons.eot?v=12799323123844063080#iefix') format("embedded-opentype"),
-       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/icons.woff?v=12824116054993862840') format("woff"),
-       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/icons.ttf?v=14842525264320281252') format("truetype"),
-       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/icons.svg?v=3824197220449812877#timber-icons') format("svg");
+  src: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/icons.eot?v=12799323123844063080');
+  src: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/icons.eot?v=12799323123844063080#iefix') format("embedded-opentype"),
+       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/icons.woff?v=12824116054993862840') format("woff"),
+       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/icons.ttf?v=14842525264320281252') format("truetype"),
+       url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/icons.svg?v=3824197220449812877#timber-icons') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1636,10 +1636,10 @@ html, body {
   Simply upload a file called 'bg.jpg' and delete lines as necessary.
 ==============================================================================*/
 // body {
-  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/bg.jpg?976) 0 0 repeat scroll;
-  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/bg.jpg?976) 0 0 no-repeat scroll;
-  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/bg.jpg?976) 0 0 repeat fixed;
-  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/bg.jpg?976) 0 0 no-repeat fixed;
+  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/bg.jpg?980) 0 0 repeat scroll;
+  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/bg.jpg?980) 0 0 no-repeat scroll;
+  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/bg.jpg?980) 0 0 repeat fixed;
+  // background: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/bg.jpg?980) 0 0 no-repeat fixed;
 
   // Fullscreen background
   // @include prefix('background-size', 'cover');
@@ -2468,7 +2468,7 @@ select {
           appearance: none;
   background-position: right center;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/arrow-down.svg?v=5103097903298822933');
+    image: url('//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/arrow-down.svg?v=582110932781403906');
     repeat: no-repeat;
     position: right 10px center;
     color: $colorBody;
@@ -5228,7 +5228,7 @@ img.mfp-img {
   width: 100%;
 
   @if $passwordPageUseBgImage {
-    background-image: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/3/assets/password-page-background.jpg?v=12987344696580752000);
+    background-image: url(//cdn.shopify.com/s/files/1/0314/6979/7515/t/5/assets/password-page-background.jpg?v=12987344696580752000);
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
