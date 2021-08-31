@@ -115,8 +115,8 @@
         "settings": {
           "title": "This Weeks Specials",
           "home_featured_row": "featured",
-          "grid": 3,
-          "rows": 3,
+          "grid": 4,
+          "rows": 4,
           "product_show_saved_amount": false,
           "product_show_compare_at_price": false
         }
