@@ -3,7 +3,9 @@
 {% include 'breadcrumb' %}
 
 <div class="grid grid-border">
-
+  <aside class="sidebar grid-item large--one-fifth grid-border--left">
+    {% include 'blog-sidebar' %}
+  </aside>
   <div class="grid-item large--four-fifths">
     <div class="grid">
       <div class="grid-item large--ten-twelfths">
@@ -88,9 +90,7 @@
     </div>
   </div>
 
-  <aside class="sidebar grid-item large--one-fifth grid-border--left">
-    {% include 'blog-sidebar' %}
-  </aside>
+  
 </div>
 
 {% endpaginate %}
