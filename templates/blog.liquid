@@ -26,8 +26,8 @@
             {%- assign image = article.image -%}
             {% comment %}{{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image' | link_to: article.url }}{% endcomment %}
             <a href="{{ article.url }}" alt="{{ image_alt }}">
-              {%- assign width = 650 -%}
-              {%- assign height = 1000 -%}
+              {%- assign width = 200 -%}
+              {%- assign height = 200 -%}
 
               {%- include 'image-logic' with width: width, height: height -%}
 
