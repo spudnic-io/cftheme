@@ -10,13 +10,13 @@
   <div class="grid-item large--four-fifths">
     <div class="grid">
       <div class="grid-item large--ten-twelfths">
-
+{% comment %}
         {% if current_tags %}
           <h1>{{ blog.title | link_to: blog.url }} &mdash; {{ current_tags.first }}</h1>
         {% else %}
           <h1>{{ blog.title }}</h1>
         {% endif %}
-
+      {% endcomment %}
         {% for article in blog.articles %}
           <div class="article">
           
