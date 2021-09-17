@@ -26,8 +26,8 @@
             {%- assign image = article.image -%}
             {% comment %}{{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image' | link_to: article.url }}{% endcomment %}
             <a href="{{ article.url }}" alt="{{ image_alt }}">
-              {%- assign width = 200 -%}
-              {%- assign height = 200 -%}
+              {%- assign width = 650 -%}
+              {%- assign height = 1000 -%}
 
               {%- include 'image-logic' with width: width, height: height -%}
 
@@ -56,7 +56,7 @@
             {% else %}
               <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
             {% endif %}
-          </div>
+          
           <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
           <p class="text-light">
             {% capture date %}<strong><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ article.published_at | date: format: 'date' }}</time></strong>{% endcapture %}
@@ -78,6 +78,7 @@
 
           <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a></p>
         </div>
+      </div>
         {% endfor %}
 
         {% if paginate.pages > 1 %}
