@@ -11,7 +11,7 @@
     overflow: hidden;
     display: flex;
 }
-.blog .article img {
+.blog .article .rte a img {
     width: 50%;
     height:200px;
     
