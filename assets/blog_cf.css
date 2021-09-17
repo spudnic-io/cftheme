@@ -5,3 +5,7 @@
 .blog h1 {
     text-align: center;
 }
+
+.blog .article {
+    max-height: 30%;
+}
