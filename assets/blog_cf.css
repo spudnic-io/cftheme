@@ -1,4 +1,6 @@
-.blog {}
+.blog {
+    text-align: center;
+}
 
 .blog h1 {
     text-align: center;
