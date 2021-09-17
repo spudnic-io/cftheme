@@ -19,13 +19,7 @@
 
         {% for article in blog.articles %}
           <div class="article">
-          <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-          <p class="text-light">
-            {% capture date %}<strong><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ article.published_at | date: format: 'date' }}</time></strong>{% endcapture %}
-            {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
-            {{ 'blogs.article.author_on_date_html' | t: author: author, date: date }}
-          </p>
-
+          
           <div class="rte">
           {% if article.image %}
             {% assign image_alt = article.title | escape %}
@@ -63,6 +57,12 @@
               <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
             {% endif %}
           </div>
+          <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+          <p class="text-light">
+            {% capture date %}<strong><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ article.published_at | date: format: 'date' }}</time></strong>{% endcapture %}
+            {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
+            {{ 'blogs.article.author_on_date_html' | t: author: author, date: date }}
+          </p>
 
           <ul>
             {% if blog.comments_enabled? %}
