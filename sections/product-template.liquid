@@ -87,10 +87,10 @@
               
               {% if product.metafields.attributes.size > 1 %}
           
-          <h3>Attributes</h3>                   
+          
     		{% for metafield in product.metafields.attributes %}
-              <div class="grid" style="border-bottom:1px solid #808080">   
-            	<div class="grid-item  large--five-twelfths text-center">{{ metafield[0] }}</div>
+              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+            	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ metafield[0] }}</div>
                 <div class="grid-item  large--five-twelfths text-center">{{ metafield[1] }}</div>
            	  </div>
               {%endfor %}            
