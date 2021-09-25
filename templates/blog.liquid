@@ -2,8 +2,8 @@
 
 {% include 'breadcrumb' %}
 
-<div class="grid grid-border blog">
-  <aside class="sidebar grid-item large--one-fifth grid-border--left">
+<div class="grid ">
+  <aside class="sidebar grid-item large--one-fifth grid-border--right">
     {% include 'blog-sidebar' %}
   </aside>
   
@@ -22,7 +22,7 @@
             
           
 
-          <div class="grid article">
+          <div class="grid grid-border article">
             <div class="grid-item large--five-twelfths">
             {% if article.image %}
               {% assign image_alt = article.title | escape %}
