@@ -87,14 +87,13 @@
               
               {% if product.metafields.attributes.size > 1 %}
           
-          
+                <div class="grid" style="font-size:14px">   
     		{% for metafield in product.metafields.attributes %}
-              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-            	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ metafield | first }}</div>
-                <div class="grid-item  large--five-twelfths text-center">{{ metafield | last }}</div>
-           	  </div>
+              
+            	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;border-bottom:1px solid #808080;">{{ metafield | first }}</div>
+                <div class="grid-item  large--five-twelfths text-center" style="border-bottom:1px solid #808080;">{{ metafield | last }}</div>"
               {%endfor %}            
-           
+            </div>
             
             {% endif %}  
               
