@@ -1,4 +1,4 @@
-{% paginate blog.articles by 5 %}
+{% paginate blog.articles by 9 %}
 
 {% include 'breadcrumb' %}
 
@@ -10,7 +10,12 @@
   <div class="grid-item large--four-fifths">
     <div class="grid">
       <div class="grid-item large--ten-twelfths">
-   
+        
+        {% for article in blog.articles %}
+
+          
+
+        {% endfor %}
 
         {% if paginate.pages > 1 %}
         <hr>
