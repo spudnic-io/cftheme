@@ -6,3 +6,7 @@
     text-align: center;
 }
 
+.blog .article
+{
+    min-height: 300px;
+}
