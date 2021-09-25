@@ -14,7 +14,7 @@
     
         {% for article in blog.articles %}
           
-          {% if forloop.index == 1 or forloop.index == 4 %}
+          {% if forloop.index == 1 or forloop.index == 4 or forloop == 7%}
             <div class="grid">
           {% endif %}  
           
@@ -24,7 +24,7 @@
           <div>{{forloop.index}}</div>
           </div>
 
-          {% if forloop.index == 3 or forloop.index == 6 or forloop.index = blog.articles.size%}
+          {% if forloop.index == 3 or forloop.index == 6 or forloop.index == blog.articles.size%}
           </div>
           {% endif %}  
           
