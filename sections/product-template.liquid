@@ -84,7 +84,7 @@
               {% endfor %}
               </div>
             </div>
-              
+              <div>{{ product.metafields.attributes.size }}</div>
               {% if product.metafields.attributes.size > 1 %}
           
           
@@ -94,12 +94,7 @@
                 <div class="grid-item  large--five-twelfths text-center">{{ metafield | last }}</div>
            	  </div>
               {%endfor %} 
-              {%- for mf in product.metafields.attributes.filters.value %}
-                <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-                <div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ mf }}</div>
-                  <div class="grid-item  large--five-twelfths text-center">{{ mf | last }}</div>
-                 </div>
-                {%endfor %}                    
+                         
            
             
             {% endif %}  
