@@ -86,7 +86,7 @@
             </div>
             {% if product.metafields.attributes.Included %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-            <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span style="margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)">Included</span></div>
+            <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Included</span></div>
              <div class="grid-item  large--seven-twelfths text-center">{{ product.metafields.attributes.Included | metafield_tag }}</div>
             </div>     
           {% endif %}
@@ -95,8 +95,8 @@
           
     		      {% for mf in product.metafields.attributes %}
               <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-             	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span style="margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%">{{ mf | first }}</span></div>
-                <div class="grid-item  large--seven-twelfths text-center">{{ mf | last }}</div>
+             	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
+                <div class="grid-item  large--seven-twelfths text-center"><span>{{ mf | last }}</span></div>
            	  </div>
               {%endfor %} 
               
