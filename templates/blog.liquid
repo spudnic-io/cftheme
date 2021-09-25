@@ -23,7 +23,9 @@
           
 
           <div class="grid grid-border--left article">
-                       
+            <div class="grid-item grid-border--top">
+              <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+            </div>           
             <div class="grid-item large--six-twelfths">
               <div class="rte">
                 
@@ -67,9 +69,7 @@
                 <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
               {% endif %}
             </div>
-            <div class="grid-item grid-border--top">
-              <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-            </div>
+            
           </div>
 
           </div>
