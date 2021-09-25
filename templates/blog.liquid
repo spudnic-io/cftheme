@@ -11,10 +11,14 @@
     <div class="grid">
       <div class="grid-item large--ten-twelfths">
         
+        
         {% for article in blog.articles %}
+          
+          <div class="grid-item large--three-twelfths">
+            {{article.title}}
+          </div>
 
           
-
         {% endfor %}
 
         {% if paginate.pages > 1 %}
