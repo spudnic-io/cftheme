@@ -90,6 +90,7 @@
           
     		      {% for metafield in product.metafields.attributes %}
               <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+              <div>{{ metafield.type }}</div>
             	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ metafield | first }}</div>
                 <div class="grid-item  large--five-twelfths text-center">{{ metafield | last }}</div>
            	  </div>
