@@ -14,10 +14,16 @@
         
         {% for article in blog.articles %}
           
+          {% if forloop.index =0 or forloop.index = 3 %}
+            <div class="grid">
+          {% endif %}  
           <div class="grid-item large--three-twelfths">
             {{article.title}}
           </div>
 
+          {% if forloop.index =3 or forloop.index = 6 %}
+          </div>
+          {% endif %}  
           
         {% endfor %}
 
