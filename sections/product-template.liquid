@@ -87,17 +87,17 @@
               <div>{{ product.metafields.attributes.size }}</div>
               {% if product.metafields.attributes.size > 1 %}
                 <div>True</div>
-          
+                <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+                <div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">Included</div>
+                 <div class="grid-item  large--five-twelfths text-center metafield-multi_line_text_field">{{ product.metafields.attributes.Included.Data }}</div>
+                </div>     
     		      {% for mf in product.metafields.attributes %}
               <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
              	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ mf | first }}</div>
                 <div class="grid-item  large--five-twelfths text-center metafield-multi_line_text_field">{{ mf | last }}</div>
            	  </div>
               {%endfor %} 
-              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-             	<div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">Included</div>
-                <div class="grid-item  large--five-twelfths text-center metafield-multi_line_text_field">{{ product.metafields.attributes.Included.Data }}</div>
-           	  </div>     
+              
            
             
             {% endif %}  
