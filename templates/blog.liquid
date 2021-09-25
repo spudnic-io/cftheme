@@ -23,10 +23,10 @@
           
 
           <div class="grid grid-border article">
-            <div class="grid-item">
-              <h3>{{article.title}}</h3>
-            </div>
-            <div class="grid-item large--five-twelfths">
+            
+            
+
+            <div class="grid-item large--six-twelfths">
             {% if article.image %}
               {% assign image_alt = article.title | escape %}
               {%- assign image = article.image -%}
@@ -58,12 +58,15 @@
     
             {% endif %}
             </div>
-            <div class="grid-item large--five-twelfths">
+            <div class="grid-item large--six-twelfths">
               {% if article.excerpt.size > 0 %}
                 {{ article.excerpt }}
               {% else %}
                 <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
               {% endif %}
+            </div>
+            <div class="grid-item">
+              <h3>{{article.title}}</h3>
             </div>
           </div>
 
