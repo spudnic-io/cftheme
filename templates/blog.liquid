@@ -27,6 +27,7 @@
             
 
             <div class="grid-item large--six-twelfths">
+              <div class="rte">
             {% if article.image %}
               {% assign image_alt = article.title | escape %}
               {%- assign image = article.image -%}
@@ -57,7 +58,7 @@
               </a>
     
             {% endif %}
-            </div>
+            </div></div>
             <div class="grid-item large--six-twelfths">
               {% if article.excerpt.size > 0 %}
                 {{ article.excerpt }}
