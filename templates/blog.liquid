@@ -20,9 +20,10 @@
           
           <div class="grid-item large--three-twelfths">
             
-          <div>{{article.title}}</div>
-
-          <div>
+          
+            
+          <div class="grid article">
+            <div class="grid-item large--seven-twelfths">
             {% if article.image %}
               {% assign image_alt = article.title | escape %}
               {%- assign image = article.image -%}
@@ -53,6 +54,14 @@
               </a>
     
             {% endif %}
+            </div>
+            <div class="grid-item large--five-twelfths">
+              {% if article.excerpt.size > 0 %}
+                {{ article.excerpt }}
+              {% else %}
+                <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
+              {% endif %}
+            </div>
           </div>
 
           </div>

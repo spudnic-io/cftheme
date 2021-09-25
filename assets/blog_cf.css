@@ -9,10 +9,9 @@
 .blog .article {
     max-height: 200px;
     overflow: hidden;
-    
 }
 .blog .article img {
     width: 10 0%;
-    max-height:200px;
+    height:160px;
     
 }
