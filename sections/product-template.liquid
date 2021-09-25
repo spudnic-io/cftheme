@@ -96,7 +96,7 @@
               {%endfor %} 
               {%- for mf in product.metafields.attributes.filters.value %}
                 <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-                <div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ mf | first }}</div>
+                <div class="grid-item  large--five-twelfths text-center" style="font-weight:600;">{{ mf }}</div>
                   <div class="grid-item  large--five-twelfths text-center">{{ mf | last }}</div>
                  </div>
                 {%endfor %}                    
