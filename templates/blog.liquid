@@ -18,8 +18,38 @@
             <div class="grid">
           {% endif %}  
           <div class="grid-item large--three-twelfths">
-            {{article.title}}
-            {{forloop.index}}
+            
+            <div class="rte">
+              {% if article.image %}
+                {% assign image_alt = article.title | escape %}
+                {%- assign image = article.image -%}
+                {% comment %}{{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image' | link_to: article.url }}{% endcomment %}
+                <a href="{{ article.url }}" alt="{{ image_alt }}">
+                  {%- assign width = 650 -%}
+                  {%- assign height = 1000 -%}
+      
+                  {%- include 'image-logic' with width: width, height: height -%}
+      
+                  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <div class="lazyload__image-wrapper" data-image-id="{{ image.id }}" style="max-width: {{ max_width }}px">
+                    <div class="lazyload__image-wrapper no-js" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+                      <img class="lazyload js article__image"
+                      src="{{ article.image | img_url: '300x' }}"
+                      data-src="{{ img_url }}"
+                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                      data-aspectratio="{{ article.image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ image_alt }}">
+                    </div>
+                  </div>
+                  <noscript>
+                    <img src="{{ image | img_url: '580x' }}"
+                      srcset="{{ image | img_url: '580x' }} 1x, {{ image | img_url: '580x', scale: 2 }} 2x"
+                      alt="{{ image.alt }}" style="opacity:1;">
+                  </noscript>
+                </a>
+              </div>
+
           </div>
 
           {% if forloop.index == 4 or forloop.index == 7 %}
