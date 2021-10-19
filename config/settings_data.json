@@ -114,7 +114,7 @@
         "type": "collection-rows",
         "settings": {
           "title": "This Weeks Specials",
-          "home_featured_row": "featured",
+          "home_featured_row": "bottles-grains",
           "grid": 5,
           "rows": 3,
           "product_show_saved_amount": false,
@@ -149,10 +149,22 @@
           "product_reviews_enable": false,
           "add_to_cart_button_size": "medium"
         }
+      },
+      "16346119217a683e17": {
+        "type": "collection-rows",
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_row": "featured",
+          "grid": 5,
+          "rows": 2,
+          "product_show_saved_amount": true,
+          "product_show_compare_at_price": false
+        }
       }
     },
     "content_for_index": [
-      "collection-row-1"
+      "collection-row-1",
+      "16346119217a683e17"
     ]
   },
   "presets": {
