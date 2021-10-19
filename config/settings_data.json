@@ -114,7 +114,7 @@
         "type": "collection-rows",
         "settings": {
           "title": "Bottles & Kits: Bundle and Save 10%",
-          "home_featured_row": "bottles-grains",
+          "home_featured_row": "bottles-kits",
           "grid": 5,
           "rows": 2,
           "product_show_saved_amount": false,
