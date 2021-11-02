@@ -114,7 +114,7 @@
         "type": "collection-rows",
         "settings": {
           "title": "Get Started Crafting 1 gallon of FUN",
-          "home_featured_row": "crafted-25",
+          "home_featured_row": "1-gallon-equipment-kit",
           "grid": 5,
           "rows": 1,
           "product_show_saved_amount": false,
