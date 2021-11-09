@@ -114,8 +114,8 @@
         "type": "collection-rows",
         "settings": {
           "title": "MORE KITS ARE BETTER THEN !",
-          "home_featured_row": "",
-          "grid": 4,
+          "home_featured_row": "2-3-4-recipe-kits-buy-more-save-more",
+          "grid": 5,
           "rows": 1,
           "product_show_saved_amount": false,
           "product_show_compare_at_price": false
