@@ -110,17 +110,6 @@
           "legal_menu": "footer"
         }
       },
-      "collection-row-1": {
-        "type": "collection-rows",
-        "settings": {
-          "title": "YOU NEED TO CRAFT MORE THEN ONE!",
-          "home_featured_row": "2-3-4-recipe-kits-buy-more-save-more",
-          "grid": 5,
-          "rows": 1,
-          "product_show_saved_amount": false,
-          "product_show_compare_at_price": false
-        }
-      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -153,17 +142,16 @@
       "16346119217a683e17": {
         "type": "collection-rows",
         "settings": {
-          "title": "Fermenters Fermenters- 1 Gallon Of FUn",
-          "home_featured_row": "1-gallon-equipment-kit",
-          "grid": 5,
-          "rows": 2,
+          "title": "Recipes a Plenty",
+          "home_featured_row": "ingredient-kits",
+          "grid": 4,
+          "rows": 3,
           "product_show_saved_amount": false,
           "product_show_compare_at_price": false
         }
       }
     },
     "content_for_index": [
-      "collection-row-1",
       "16346119217a683e17"
     ]
   },
