@@ -66,17 +66,17 @@
 
     <p>{{ product.title }}</p>
     <div class="product-item--price">
-      <span class="h1 medium--left">
+    
         {% assign maxPrice = product.price_max %} 
         {% assign minPrice = product.price_min %} 
-		    <p>
+		    <span class="h1 medium--left">
         {% include 'price' with minPrice %} 
-        </p>
+        </span>
         {% if maxPrice != minPrice %}
-          <p><small>To</small></p>
-          <p>
+          <span>to</span><span class="h1 medium--left">
+          
         {% include 'price' with maxPrice %}
-          </p>
+          </span>
         {% endif %}        
       </span>
     </div>
