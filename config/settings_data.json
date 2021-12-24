@@ -110,17 +110,6 @@
           "legal_menu": "footer"
         }
       },
-      "collection-row-1": {
-        "type": "collection-rows",
-        "settings": {
-          "title": "Bottles & Kits: Bundle and Save 10%",
-          "home_featured_row": "bottles-kits",
-          "grid": 5,
-          "rows": 2,
-          "product_show_saved_amount": false,
-          "product_show_compare_at_price": false
-        }
-      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -153,17 +142,16 @@
       "16346119217a683e17": {
         "type": "collection-rows",
         "settings": {
-          "title": "Ready & waiting",
-          "home_featured_row": "featured",
-          "grid": 5,
+          "title": "Now i have a Fermenter ....\"Ho HO HO\"",
+          "home_featured_row": "now-i-have-a-fermenter-ho-ho-ho",
+          "grid": 4,
           "rows": 2,
-          "product_show_saved_amount": true,
+          "product_show_saved_amount": false,
           "product_show_compare_at_price": false
         }
       }
     },
     "content_for_index": [
-      "collection-row-1",
       "16346119217a683e17"
     ]
   },
