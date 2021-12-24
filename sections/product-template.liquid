@@ -18,10 +18,11 @@
       </style>
     {% endif %}
     <style>
-      .variantdisplay {
+      .priceDisplay, .variantDisplay,  .quantityDisplay{
         text-align:center;
       }
-      .variantdisplay select{width: 95%;max-width: 95%;}
+      .variantDisplay Select{width: 95%;max-width: 95%;}
+      .priceDisplay ul{width: 95%;max-width: 95%;}
     </style>
     {% if section.settings.product_quantity_enable == false %}
       <style>
@@ -147,6 +148,7 @@
         <div class="grid">{{ product.description }}</div>
         <div style="text-align:center;" class="grid">
 			<div class="grid-item large--one-third text-center">
+        <div class="priceDisplay">
               <ul class="inline-list product-meta" data-price>
                 <li>
                   <span id="productPrice-{{ section.id }}" class="h1">
@@ -180,9 +182,10 @@
             </div>
           {%- endif -%}
               <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+        </div>
           </div>
           <div class="grid-item large--one-third text-center">
-            <div class="variantdisplay">
+            <div class="variantDisplay">
               <select style="width: fit-content;max-width: 95%;" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
               {% for variant in product.variants %}
                 {% if variant.available %}
@@ -199,9 +202,11 @@
           </div>
           </div>
           	<div class="grid-item large--one-third text-center">
+              <div class="quantityDisplay">
               {% if section.settings.product_quantity_enable %}
               <input type="number" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
             {% endif %}       
+          </div>
           </div>
 
 		</div>
