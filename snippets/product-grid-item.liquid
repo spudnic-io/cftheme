@@ -20,7 +20,7 @@
   {% assign sold_out = false %}
 {% endif %}
 
-<div class="grid-item {{ grid_item_width }}{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}">
+<div style="border: 1px solid while;" class="grid-item {{ grid_item_width }}{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}">
 
   <a href="{{ product.url | within: current_collection }}" class="product-grid-item">
     <div class="product-grid-image">
