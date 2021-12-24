@@ -65,20 +65,15 @@
     </div>
 
     <p>{{ product.title }}</p>
-    <div class="product-item--price">
-    
-        {% assign maxPrice = product.price_max %} 
-        {% assign minPrice = product.price_min %} 
-		    <span class="h1 medium--center">
-        {% include 'price' with minPrice %} 
-        </span>
-        {% if maxPrice != minPrice %}
-          <span class="medium--center">to</span>
-          <span class="h1 medium--center">          
-        {% include 'price' with maxPrice %}
-          </span>
-        {% endif %}        
-      </span>
+        <div style="text-align:center;" class="product-item--price">
+      
+        {% if product.price_max == product.price.min %}
+          <p>{% include 'price' with product.price_max %}</p>
+        {% else %}
+          <p>{% include 'price' with product.price_min %}-{% include 'price' with product.price_max %}</p>
+        {% endif %}
+
+        
     </div>
 
     {% if section.settings.product_reviews_enable %}
