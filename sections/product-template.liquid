@@ -17,7 +17,11 @@
         }
       </style>
     {% endif %}
-    
+    <style>
+      .single-option-selector {
+        width: fit-content;max-width: 95%;
+      }
+    </style>
     {% if section.settings.product_quantity_enable == false %}
       <style>
         .selector-wrapper select, .product-variants select {
@@ -177,7 +181,7 @@
               <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
           </div>
           <div class="grid-item large--one-third text-center">
-              <select  style="width: fit-content;max-width: 95%;" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
+              <select style="width: fit-content;max-width: 95%;" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
               {% for variant in product.variants %}
                 {% if variant.available %}
     
