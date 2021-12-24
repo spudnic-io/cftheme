@@ -156,6 +156,7 @@
                   </span>
                   {% include 'product-unit-price', variant: variant %}
                 </li>
+                {% comment %}
                 {% if product.compare_at_price_max > product.price and section.settings.product_show_saved_amount %}
                 <li>
                   <span id="comparePrice-{{ section.id }}" class="sale-tag large">
@@ -165,6 +166,7 @@
                   </span>
                 </li>
                 {% endif %}
+              {% endcomment %}
                 {% if section.settings.product_reviews_enable %}
                   <li class="product-meta--review">
                     <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
