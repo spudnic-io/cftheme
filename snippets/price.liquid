@@ -12,13 +12,13 @@
       {% if price > 99 %}
         {% capture formatted_price %}{{ formatted_price | replace: '.','<sup>' }}</sup>{% endcapture %}
       {% else %}
-        {% capture formatted_price %}{{ formatted_price | replace: '$','' }}<sup>¢</sup>{% endcapture %}
+        {% capture formatted_price %}{{ formatted_price | replace: '$0.','' }}<sup>¢</sup>{% endcapture %}
       {% endif %}
     {% elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}' %}
       {% if price > 99 %}  
         {% capture formatted_price %}{{ formatted_price | replace: ',','<sup>' }}</sup>{% endcapture %}
         {% else %}
-        {% capture formatted_price %}{{ formatted_price | replace: '$','' }}<sup>¢</sup>{% endcapture %}
+        {% capture formatted_price %}{{ formatted_price | replace: '$0.','' }}<sup>¢</sup>{% endcapture %}
       {% endif %}
     {% endif %}
   {% endif %}
