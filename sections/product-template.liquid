@@ -177,7 +177,7 @@
               <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
           </div>
           <div class="grid-item large--one-third text-center">
-              <select style="width:100%" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
+              <select  style="width: fit-content;max-width: 95%;" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
               {% for variant in product.variants %}
                 {% if variant.available %}
     
