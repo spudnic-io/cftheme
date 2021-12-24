@@ -67,15 +67,11 @@
     <p>{{ product.title }}</p>
     <div class="product-item--price">
       <span class="h1 medium--left">
-        {% assign max = product.price_max %} 
-        {% assign min = product.price_max %} 
-		{% include 'price' with max %} 
+        {% assign maxPrice = product.price_max %} 
+        {% assign minPrice = product.price_max %} 
+		{% include 'price' with maxPrice %} 
     <small>To</small>     
-    {% include 'price' with min %} 
-        {% assign pv = product.variants %}
-        
-        {% endfor %}
-        
+    {% include 'price' with minPrice %}        
       </span>
     </div>
 
