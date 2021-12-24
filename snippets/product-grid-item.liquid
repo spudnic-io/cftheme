@@ -64,9 +64,9 @@
       </div>
     </div>
 
-    <p>{{ product.title }}</p>
-        <div style="text-align:center;" class="product-item--price">
-      
+    
+        <div style="text-align:center;width:100%;" class="product-item--price">
+          <p>{{ product.title }}</p>
         {% if product.price_max == product.price.min %}
           <p>{% include 'price' with product.price_max %}</p>
         {% else %}
