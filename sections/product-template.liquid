@@ -18,9 +18,10 @@
       </style>
     {% endif %}
     <style>
-      .single-option-selector {
-        width: fit-content;max-width: 95%;
+      .variantdisplay {
+        
       }
+      .variantdisplay select{width: fit-content;max-width: 95%;}
     </style>
     {% if section.settings.product_quantity_enable == false %}
       <style>
@@ -181,6 +182,7 @@
               <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
           </div>
           <div class="grid-item large--one-third text-center">
+            <div class="variantdisplay">
               <select style="width: fit-content;max-width: 95%;" name="id" id="productSelect-{{ section.id }}" class="product-variants product-variants-{{ section.id }}">
               {% for variant in product.variants %}
                 {% if variant.available %}
@@ -194,6 +196,7 @@
                 {% endif %}
               {% endfor %}
             </select>
+          </div>
           </div>
           	<div class="grid-item large--one-third text-center">
               {% if section.settings.product_quantity_enable %}
