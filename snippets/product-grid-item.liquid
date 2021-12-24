@@ -68,11 +68,14 @@
     <div class="product-item--price">
       <span class="h1 medium--left">
         {% assign maxPrice = product.price_max %} 
-        {% assign minPrice = product.price_max %} 
-		{% include 'price' with maxPrice %} 
+        {% assign minPrice = product.price_min %} 
+		    
+        {% include 'price' with minPrice %} 
+        
         {% if maxPrice != minPrice %}
-        <small>To</small>     
-        {% include 'price' with minPrice %}
+          To     
+        {% include 'price' with maxPrice %}
+        
         {% endif %}        
       </span>
     </div>
