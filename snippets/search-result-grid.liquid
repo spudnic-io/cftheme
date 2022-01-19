@@ -64,30 +64,16 @@
       </div>
       {% endif %}
 
-      <p>{{ item.title }}</p>
+      <div style="text-align:center;width:100%;" class="product-item--price">
+          <p>{{ product.title }}</p><span class="h1">
+        {% if product.price_varies %}
+          <p>{% include 'price' with product.price_min %}-{% include 'price' with product.price_max %}</p>
+        {% else %}
+          <p>{% include 'price' with product.price_max %}</p>
+        {% endif %}</span>
 
-      <div class="product-item--price">
-        <span class="h1 medium--left">
-          {% if on_sale and section.settings.product_show_compare_at_price %}
-            <span class="visually-hidden">{{ "products.general.sale_price" | t }}</span>
-          {% else %}
-            <span class="visually-hidden">{{ "products.general.regular_price" | t }}</span>
-          {% endif %}
-          {% include 'price' with item.price %}
-          {% if on_sale and section.settings.product_show_compare_at_price  %}
-            <small>
-              <s>
-                <span class="visually-hidden">{{ "products.general.regular_price" | t }}</span>
-                {% include 'price' with item.compare_at_price %}
-              </s>
-            </small>
-          {% endif %}
-        </span>
-
-        {%- if item.first_available_variant.available and item.first_available_variant.unit_price_measurement -%}
-          {% include 'product-unit-price', variant: item.first_available_variant %}
-        {%- endif -%}
-      </div>
+        
+    </div>
       {% if on_sale and section.settings.product_show_saved_amount %}
         <div class="sale-tag medium--right">
           {% assign compare_price = item.compare_at_price %}
