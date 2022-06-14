@@ -23,11 +23,17 @@
       
       {% if collection.description != blank %}
         <header class="section-header">
-          <img src="{{collection.image | img_url:"small"}}">
-          <h1 class="section-header--title h1"><a href="{{ collection.meta.homepage }}">{{ collection.title }}</a></h1>
-          <div class="rte rte--header">
-            {{ collection.description }}
+          <div class="grid">
+            <div class="grid--item-one-sixth">
+              <img src="{{collection.image | img_url:"small"}}">
+            </div>
+            <div class="grid-item-five-siths">
+            <h1 class="section-header--title h1"><a href="{{ collection.meta.homepage }}">{{ collection.title }}</a></h1>
+            <div class="rte rte--header">
+              {{ collection.description }}
+            </div>
           </div>
+        </div>
         </header>
         <hr{% if has_sidebar %} class="hr--offset-left"{% endif %}>
         <div class="section-header">
