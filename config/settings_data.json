@@ -142,17 +142,29 @@
       "16346119217a683e17": {
         "type": "collection-rows",
         "settings": {
-          "title": "Everything Can't be Free But it can Be discounted!",
-          "home_featured_row": "save20",
-          "grid": 5,
-          "rows": 3,
+          "title": "Kits and Kits",
+          "home_featured_row": "equipment-kits",
+          "grid": 4,
+          "rows": 1,
           "product_show_saved_amount": false,
+          "product_show_compare_at_price": false
+        }
+      },
+      "16558606101bfe642c": {
+        "type": "collection-rows",
+        "settings": {
+          "title": "itskay andyay kits",
+          "home_featured_row": "ingredient-kits",
+          "grid": 4,
+          "rows": 2,
+          "product_show_saved_amount": true,
           "product_show_compare_at_price": false
         }
       }
     },
     "content_for_index": [
-      "16346119217a683e17"
+      "16346119217a683e17",
+      "16558606101bfe642c"
     ]
   },
   "presets": {
