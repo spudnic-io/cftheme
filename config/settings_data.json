@@ -144,7 +144,7 @@
         "settings": {
           "title": "Kits and Kits",
           "home_featured_row": "equipment-kits",
-          "grid": 4,
+          "grid": 3,
           "rows": 1,
           "product_show_saved_amount": false,
           "product_show_compare_at_price": false
@@ -160,9 +160,21 @@
           "product_show_saved_amount": true,
           "product_show_compare_at_price": false
         }
+      },
+      "165762488406424409": {
+        "type": "featured-product",
+        "settings": {
+          "featured_product": "midway-your-second-fermentor",
+          "product_quantity_enable": true,
+          "product_vendor_enable": false,
+          "product_image_zoom_enable": true,
+          "enable_payment_button": true,
+          "social_sharing_products": true
+        }
       }
     },
     "content_for_index": [
+      "165762488406424409",
       "16346119217a683e17",
       "16558606101bfe642c"
     ]
