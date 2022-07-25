@@ -99,7 +99,7 @@
           {% if product.metafields.attributes.instructions %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
             <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Instructions</span></div>
-             <div class="grid-item  large--nine-twelfths text-center"><span style="height:150px;">{{ product.metafields.attributes.instructions | metafield_tag }}</span></div>
+             <div class="grid-item  large--nine-twelfths text-center"><span style="height:100px;">{{ product.metafields.attributes.instructions | metafield_tag }}</span></div>
             </div>     
           {% endif %}
               {% if product.metafields.attributes.size > 1 %} 
@@ -108,7 +108,7 @@
                     {% if mf.type == 'json' %}
                     {% else %}
                     <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-                   	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>test{{ mf | first }}</span></div>
+                   	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
                     <div class="grid-item  large--nine-twelfths text-center"><span>{{ mf | last }}</span></div>
                     {% endif %}
              	  </div>
