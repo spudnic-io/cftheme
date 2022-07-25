@@ -117,7 +117,7 @@
     		      {% for mf in product.metafields.attributes %}
                     <div>{{ mf.type }}</div>
                     {% assign mflbl = mf | first %}
-                    {% if mflbl == 'ingredients' %}
+                    {% if mflbl == 'ingredients' or mflbl == 'ingredient_list'  %}
                     {% else %}
                     <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
                    	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
