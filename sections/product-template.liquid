@@ -90,7 +90,7 @@
               {% endfor %}
               </div>
             </div>
-            {% comment %}
+            
             {% if product.metafields.attributes.Included %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
             <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Included</span></div>
@@ -103,6 +103,7 @@
              <div class="grid-item  large--nine-twelfths text-center"><div style="height:200px;">{{ product.metafields.attributes.instructions | metafield_tag }}</div></div>
             </div>     
           {% endif %}
+          {% comment %}
           {% if product.metafields.attributes.Ingredients %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
               <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;">Malts</div>
