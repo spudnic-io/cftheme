@@ -109,7 +109,8 @@
               {% for malt in product.metafields.attributes.Ingredients.malts %}
               <li><a href="{{ malt.product_reference }}">{{ malt.title }}</a></li>    
               {% endfor %}
-              </ul></div>
+              </ul>
+            </div>
             </div>     
             {% endif %}
               {% if product.metafields.attributes.size > 1 %} 
