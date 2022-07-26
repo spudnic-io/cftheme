@@ -110,7 +110,8 @@
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
               <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;">Malts</div>
               <div class="grid-item  large--nine-twelfths text-center"><ul>
-              {% for malt in product.metafields.attributes.Ingredients.malts %}
+             {% assign malts=product.metafields.attributes.Ingredients.malts %}
+              {% for malt in malts %}
               <li><a href="{{ malt.product_reference }}">{{ malt.title }}</a></li>    
               {% endfor %}
               </ul>
