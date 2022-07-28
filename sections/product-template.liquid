@@ -23,6 +23,8 @@
       }
       .variantDisplay Select{width: 95%;max-width: 95%;}
       .priceDisplay ul{width: 95%;max-width: 95%;}
+      .instructions {}
+      .instructions img {width:"100px";height:"100px"}
     </style>
     {% if section.settings.product_quantity_enable == false %}
       <style>
@@ -98,7 +100,7 @@
             </div>     
           {% endif %}
           {% if product.metafields.attributes.instructions %}
-            <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+            <div class="grid instructions" style="border-bottom:1px solid #808080;font-size:14px">   
              <div class="grid-item  large--twelve-twelfths text-center" style="font-weight:600;">
               <div>Instructions</div>
             <div style="max-height:250px;overflow:hidden">{{ product.metafields.attributes.instructions | metafield_tag }}</div>              
