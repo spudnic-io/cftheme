@@ -100,10 +100,10 @@
             </div>     
           {% endif %}
           {% if product.metafields.attributes.instructions %}
+            <div style="border-bottom:.125em solid #808080;font-weight:600;">Instructions</div>
             <div class="grid instructions" style="border-bottom:1px solid #808080;font-size:14px">   
-             <div class="grid-item large--twelve-twelfths text-center" style="font-weight:600;">
-              <div>Instructions</div>
-            <div style="max-height:250px;overflow:hidden"><a href="{{ product.metafields.attributes.instructions | file_url }}"><img style="width:50px;height:50px;" src="https://res-1.cdn.office.net:443/files/fabric-cdn-prod_20220127.003/assets/item-types/20/pdf.svg" /></a></div>              
+             <div class="grid-item large--twelve-twelfths text-center" style="font-weight:600;">            
+             <a href="{{ product.metafields.attributes.instructions | file_url }}"><img style="width:50px;height:50px;" src="https://res-1.cdn.office.net:443/files/fabric-cdn-prod_20220127.003/assets/item-types/20/pdf.svg" /></a>              
             </div>
             </div>     
           {% endif %}
