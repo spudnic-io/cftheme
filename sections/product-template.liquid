@@ -103,7 +103,7 @@
             <div class="grid instructions" style="border-bottom:1px solid #808080;font-size:14px">   
              <div class="grid-item large--twelve-twelfths text-center" style="font-weight:600;">
               <div>Instructions</div>
-            <div style="max-height:250px;overflow:hidden">{{ product.metafields.attributes.instructions | metafield_tag }}</div>              
+            <div style="max-height:250px;overflow:hidden">{{ product.metafields.attributes.instructions | asset_url | file_url }}</div>              
             </div>
             </div>     
           {% endif %}
