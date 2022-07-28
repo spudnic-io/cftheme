@@ -111,8 +111,8 @@
             <div style="font-weight:600;">Ingredients</div>
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
-              <div class="grid" style="font-size:14px">   
-              <div class="grid-item  large--three-twelfths text-center" style="border-bottom:.125em solid #808080;">{{ ingredient | first | upcase }}</div>
+              <div class="grid" style="font-size:14px" style="border-bottom:.125em solid #808080;">   
+              <div class="grid-item  large--three-twelfths text-center" >{{ ingredient | first | upcase }}</div>
                 <div class="grid-item  large--nine-twelfths text-center">                        
                           {% assign val = ingredient | last %}
                           {% for v in val %}
