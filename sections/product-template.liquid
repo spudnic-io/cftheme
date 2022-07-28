@@ -114,7 +114,7 @@
               {% for malt in malts %}
               <li><a href="{{ malt.product_reference.text }}">{{ malt.title.text }}</a></li>    
               {% endfor %}
-              <li>{{  product.metafields.attributes['Ingredients']['malts'] }}</li>
+              <li>{{  product.metafields.attributes['Ingredients']['malts'].text }}</li>
               </ul>
             </div>
             </div>     
