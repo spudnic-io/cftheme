@@ -109,9 +109,9 @@
           {% endif %}
           
           {% if product.metafields.attributes['Ingredients'] %}
-            <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-              <div class="grid-item  large--twelve-twelfths text-center" style="font-weight:600;">Ingredients</div>
-            </div>
+            
+            <div class="" style="font-weight:600;">Ingredients</div>
+            
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
               <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
