@@ -101,7 +101,7 @@
           {% endif %}
           {% if product.metafields.attributes.instructions %}
             <div class="grid instructions" style="border-bottom:1px solid #808080;font-size:14px">   
-             <div class="grid-item  large--twelve-twelfths text-center" style="font-weight:600;">
+             <div class="grid-item large--twelve-twelfths text-center" style="font-weight:600;">
               <div>Instructions</div>
             <div style="max-height:250px;overflow:hidden">{{ product.metafields.attributes.instructions | metafield_tag }}</div>              
             </div>
@@ -110,8 +110,10 @@
           
           {% if product.metafields.attributes['Ingredients'] %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-              <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;">Ingredients</div>
-              <div class="grid-item  large--nine-twelfths text-center"><ul>
+              <div class="grid-item  large--twelve-twelfths text-center" style="font-weight:600;">Ingredients</div>
+            </div>
+              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+              <div class="grid-item  large--three-twelfths text-center"><ul>
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
               <li>{{ ingredient | first }}</li>    
