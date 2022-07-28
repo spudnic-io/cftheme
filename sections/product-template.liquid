@@ -114,7 +114,7 @@
               <div class="grid-item  large--nine-twelfths text-center"><ul>
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
-              <li>{{ ingredient }}</li>    
+              <li>{{ ingredient | first }}</li>    
               {% endfor %}
               </ul>
               </div>
