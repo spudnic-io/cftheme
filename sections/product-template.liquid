@@ -103,7 +103,7 @@
             <div class="grid instructions" style="border-bottom:1px solid #808080;font-size:14px">   
              <div class="grid-item large--twelve-twelfths text-center" style="font-weight:600;">
               <div>Instructions</div>
-            <div style="max-height:250px;overflow:hidden">{{ product.metafields.attributes.instructions | file_url }}</div>              
+            <div style="max-height:250px;overflow:hidden"><a href="{{ product.metafields.attributes.instructions | file_url }}"><img src="https://res-1.cdn.office.net:443/files/fabric-cdn-prod_20220127.003/assets/item-types/20/pdf.svg" /></a></div>              
             </div>
             </div>     
           {% endif %}
