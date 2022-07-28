@@ -110,7 +110,7 @@
           
           {% if product.metafields.attributes['Ingredients'] %}
             
-            <div class="" style="font-weight:600;">Ingredients</div>
+            <div style="border-bottom:1em solid black;font-weight:600;">Ingredients</div>
             
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
