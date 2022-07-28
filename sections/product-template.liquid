@@ -115,13 +115,11 @@
               {% for ingredient in ingredients %}
               <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
               <div class="grid-item  large--three-twelfths text-center">{{ ingredient | first | upcase }}</div>
-                <div class="grid-item  large--nine-twelfths text-center">
-                        
+                <div class="grid-item  large--nine-twelfths text-center">                        
                           {% assign val = ingredient | last %}
                           {% for v in val %}
-                            <div>{{ v.title }}</div>
-                           {% endfor %}
-                        
+                            <div><a href="{{ v.url }}">{{ v.title }}</a></div>
+                           {% endfor %}                        
                 </div>
                 </div>
             
