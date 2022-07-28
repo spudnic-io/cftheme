@@ -108,11 +108,11 @@
           
           {% if product.metafields.attributes['Ingredients'] %}
             
-            <div style="border-bottom:.125em solid #808080;font-weight:600;">Ingredients</div>
+            <div style="font-weight:600;">Ingredients</div>
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
               {% for ingredient in ingredients %}
-              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-              <div class="grid-item  large--three-twelfths text-center">{{ ingredient | first | upcase }}</div>
+              <div class="grid" style="font-size:14px">   
+              <div class="grid-item  large--three-twelfths text-center" style="border-bottom:.125em solid #808080;">{{ ingredient | first | upcase }}</div>
                 <div class="grid-item  large--nine-twelfths text-center">                        
                           {% assign val = ingredient | last %}
                           {% for v in val %}
