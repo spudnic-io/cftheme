@@ -106,11 +106,11 @@
             </div>     
           {% endif %}
           
-          {% if product.metafields.attributes['Ingredients'] %}
+          {% if product.metafields.attributes['ingredients'] %}
             <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
               <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;">Malts</div>
               <div class="grid-item  large--nine-twelfths text-center"><ul>
-             {% assign ingredients=product.metafields.attributes.Ingredients %}
+             {% assign ingredients=product.metafields.attributes.ingredients %}
               {% for ingredient in ingredients %}
               <li><a href="{{ ingredient }}">{{ malt.title.text }}</a></li>    
               {% endfor %}
