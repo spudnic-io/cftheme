@@ -126,9 +126,9 @@
              {% assign included=product.metafields.attributes.included.value %}
               {% for inc in included %}
               <div class="grid" style="font-size:14px;border-bottom:.125em solid #808080;">   
-              <div class="grid-item  large--three-twelfths text-center" >Included Test</div>
+              <div class="grid-item  large--three-twelfths text-center" >{{ inc | first | upcase }}</div>
                 <div class="grid-item  large--nine-twelfths text-center">                        
-                          {% assign val = include | last %}
+                          {% assign val = inc | last %}
                           {% for v in val %}
                             <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
                            {% endfor %}                        
