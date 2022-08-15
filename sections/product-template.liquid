@@ -93,12 +93,7 @@
               </div>
             </div>
             
-            {% if product.metafields.attributes.Included %}
-            <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-            <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Included</span></div>
-             <div class="grid-item  large--nine-twelfths text-center">{{ product.metafields.attributes.Included | metafield_tag }}</div>
-            </div>     
-          {% endif %}
+            
           {% if product.metafields.attributes.instructions %}
             <div style="font-weight:600;">Instructions</div>
             <div style="border-bottom:.125em solid #808080;font-weight:600;">
