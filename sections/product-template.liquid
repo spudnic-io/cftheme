@@ -123,18 +123,10 @@
               {% endfor %}
             {% endif %}
             {% if product.metafields.attributes['included'] %}
-             {% assign included=product.metafields.attributes.included.value %}
-              {% for inc in included %}
-              <div class="grid" style="font-size:14px;border-bottom:.125em solid #808080;">   
-              <div class="grid-item  large--three-twelfths text-center" >{{ inc | first | upcase }}</div>
-                <div class="grid-item  large--nine-twelfths text-center">                        
-                          {% assign val = inc | last %}
-                          {% for v in val %}
-                            <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
-                           {% endfor %}                        
-                </div>
-                </div>
-              {% endfor %}
+               <div style="font-weight:600;">Included</div>
+              <div style="border-bottom:.125em solid #808080;font-weight:600;">
+              </div>
+            </div>
             {% endif %}
             
             {% comment %}
