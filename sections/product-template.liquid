@@ -122,6 +122,21 @@
                 </div>
               {% endfor %}
             {% endif %}
+            {% if product.metafields.attributes['included'] %}
+             {% assign included=product.metafields.attributes.included.value %}
+              {% for include in included %}
+              <div class="grid" style="font-size:14px;border-bottom:.125em solid #808080;">   
+              <div class="grid-item  large--three-twelfths text-center" >{{ include | first | upcase }}</div>
+                <div class="grid-item  large--nine-twelfths text-center">                        
+                          {% assign val = include | last %}
+                          {% for v in val %}
+                            <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
+                           {% endfor %}                        
+                </div>
+                </div>
+              {% endfor %}
+            {% endif %}
+            
             {% comment %}
               {% if product.metafields.attributes.size > 1 %} 
     		      {%- for mf in product.metafields.attributes -%}
