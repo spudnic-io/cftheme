@@ -135,7 +135,7 @@
                     <div>{{ mf.type }}</div>
                     {% assign mf_lbl = mf | first %}
                     {% assign mflbl = mf | upcase %}
-                    {% if mflbl == 'INGREDIENTS' or mflbl  == 'INGREDIENT_LIST' or mflbl == 'INSTRUCTIONS' %}
+                    {% if mflbl == 'INGREDIENTS' or mflbl  == 'INGREDIENT_LIST' or mflbl == 'INSTRUCTIONS' or mflbl == 'INCLUDED' %} 
                     {% else %}
                     <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
                    	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
