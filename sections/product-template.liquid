@@ -124,9 +124,9 @@
             {% endif %}
             {% if product.metafields.attributes['included'] %}
              {% assign included=product.metafields.attributes.included.value %}
-              {% for include in included %}
+              {% for inc in included %}
               <div class="grid" style="font-size:14px;border-bottom:.125em solid #808080;">   
-              <div class="grid-item  large--three-twelfths text-center" >{{ include | first | upcase }}</div>
+              <div class="grid-item  large--three-twelfths text-center" >Included Test</div>
                 <div class="grid-item  large--nine-twelfths text-center">                        
                           {% assign val = include | last %}
                           {% for v in val %}
