@@ -104,10 +104,10 @@
           {% endif %}
           {% if product.metafields.attributes['Included'] %}
                <div style="font-weight:400;">Includes</div>
-              <div style="border-bottom:.125em solid #808080;font-weight:100;">
+              <div>
                   {% assign includedItems=product.metafields.attributes.Included.value.items %}
                   {%  for v in includedItems %}
-                    <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
+                    <div style="border-bottom:.125em solid #808080;font-weight:100;"><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
                     {% endfor %}
               </div>
             
