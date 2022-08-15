@@ -107,6 +107,16 @@
             </a>              
             </div>
           {% endif %}
+          {% if product.metafields.attributes['Included'] %}
+               <div style="font-weight:600;">Included</div>
+              <div style="border-bottom:.125em solid #808080;font-weight:600;">
+                  {% assign includedItems=product.metafields.attributes.Included.value.items %}
+                  {%  for v in includedItems %}
+                    <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
+                    {% endfor %}
+              </div>
+            </div>
+            {% endif %}
           
           {% if product.metafields.attributes['Ingredients'] %}
              {% assign ingredients=product.metafields.attributes.Ingredients.value %}
@@ -122,16 +132,7 @@
                 </div>
               {% endfor %}
             {% endif %}
-            {% if product.metafields.attributes['Included'] %}
-               <div style="font-weight:600;">Included</div>
-              <div style="border-bottom:.125em solid #808080;font-weight:600;">
-                  {% assign includedItems=product.metafields.attributes.Included.value.items %}
-                  {%  for v in includedItems %}
-                    <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
-                    {% endfor %}
-              </div>
-            </div>
-            {% endif %}
+            
             
             {% comment %}
               {% if product.metafields.attributes.size > 1 %} 
