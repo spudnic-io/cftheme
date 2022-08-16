@@ -1,4 +1,34 @@
 <ul class="site-nav" id="AccessibleNav">
+  <li>
+{% if section.settings.logo %}
+          {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+          {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
+          <a href="{{ routes.root_url }}" itemprop="url">
+            <div class="lazyload__image-wrapper no-js header-logo__image" style="max-width:{{ section.settings.logo_max_width }}px;">
+              <div style="padding-top:{{ 1 | divided_by: section.settings.logo.aspect_ratio | times: 100}}%;">
+                <img class="lazyload js"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                  data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ logo_alt | escape }}"
+                  style="width:{{ section.settings.logo_max_width }}px;">
+              </div>
+            </div>
+            <noscript>
+              {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+              <img src="{{ section.settings.logo | img_url: image_size }}"
+                srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                alt="{{ logo_alt | escape }}"
+                itemprop="logo"
+                style="max-width:{{ section.settings.logo_max_width }}px;">
+            </noscript>
+          </a>
+          {% else %}
+            <a href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
+          {% endif %}
+</li>
   {% unless linklists[section.settings.menu].links.first.url == routes.root_url %}
   <li class="large--hide">
     <a href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
