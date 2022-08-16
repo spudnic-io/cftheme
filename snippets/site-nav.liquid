@@ -5,7 +5,7 @@
           {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
           <a href="{{ routes.root_url }}" itemprop="url">
-            <div class="lazyload__image-wrapper no-js header-logo__image" style="max-width:{{ section.settings.logo_max_width }}px;">
+            <div class="lazyload__image-wrapper no-js header-logo__image" style="max-width:100px;">
               <div style="padding-top:{{ 1 | divided_by: section.settings.logo.aspect_ratio | times: 100}}%;">
                 <img class="lazyload js"
                   data-src="{{ img_url }}"
