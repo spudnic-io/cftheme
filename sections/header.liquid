@@ -3,11 +3,7 @@
 
     <div class="grid--full">
       <div class="grid-item large--one-half">
-        {% if request.page_type == 'index' %}
-          <h1 class="header-logo" itemscope itemtype="http://schema.org/Organization">
-        {% else %}
-          <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
-        {% endif %}
+        
           {% if section.settings.logo %}
           {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
           {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
