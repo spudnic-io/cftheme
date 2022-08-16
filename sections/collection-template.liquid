@@ -12,11 +12,11 @@
 <div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template">
   <div class="grid grid-border">
 
-    
+    {% comment %}
     <aside class="sidebar grid-item large--one-fifth collection-filters" id="collectionFilters">
       {% include 'collection-sidebar' %}
     </aside>
-    
+    {% endcomment %}
 
     <div class="grid-item{% if has_sidebar %} large--four-fifths grid-border--left{% endif %}">
 
