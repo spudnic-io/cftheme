@@ -9,7 +9,7 @@
 
 {% if section.settings.collection_sidebar_filters == 'groups' %}
   {% if collection.all_tags.size > 0 %}
-
+<img src="{{collection.image | img_url:"small"}}">
     <div class="grid-uniform">
       {%- comment -%}
         Loop through tag categories
