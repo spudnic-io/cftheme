@@ -171,7 +171,7 @@
           
             {% assign c = collections | where: "title", product.vendor %}
        		{% if c[0] %}
-            {{ c[0].image | img_url: '200x200'| img_tag }}
+            {{ c[0].image | img_url: '150x150'| img_tag }}
 			{% endif %}
           <h1 class="h2" itemprop="name">{{ product.title }}</h1>
           
