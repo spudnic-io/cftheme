@@ -32,7 +32,7 @@
 {% if collections[featured_row].all_products_count != 0 and section.settings.home_featured_row != blank %}
 
   {% if section.settings.title != blank %}
-    <div class="section-header">
+    <div class="section-header" style="text-align: center;>
       <p class="h1{% if more_link %} section-header--left{% endif %}">{{ section.settings.title | escape }}</p>
       {% if more_link %}
         <div class="section-header--right">
