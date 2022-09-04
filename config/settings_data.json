@@ -65,8 +65,8 @@
         "settings": {
           "menu": "main-menu",
           "logo": "shopify:\/\/shop_images\/MainLogoCropped.png",
-          "logo_max_width": "200",
-          "show_announcement": true,
+          "logo_max_width": "175",
+          "show_announcement": false,
           "announcement_text": "Crafted Fermentations News!",
           "announcement_link": "shopify:\/\/blogs\/news"
         }
@@ -142,17 +142,41 @@
       "16346119217a683e17": {
         "type": "collection-rows",
         "settings": {
-          "title": "Everything Can't be Free But it can Be discounted!",
-          "home_featured_row": "save20",
+          "title": "More Kits for the Mash",
+          "home_featured_row": "ingredient-kits",
           "grid": 5,
-          "rows": 3,
+          "rows": 1,
           "product_show_saved_amount": false,
+          "product_show_compare_at_price": false
+        }
+      },
+      "16558606101bfe642c": {
+        "type": "collection-rows",
+        "settings": {
+          "title": "You Still Need more Ingredients",
+          "home_featured_row": "brewering-grains-extracts",
+          "grid": 3,
+          "rows": 2,
+          "product_show_saved_amount": true,
+          "product_show_compare_at_price": false
+        }
+      },
+      "16597060211907b6f9": {
+        "type": "collection-rows",
+        "settings": {
+          "title": "Maybe Another Fermenter",
+          "home_featured_row": "equipment-kits",
+          "grid": 4,
+          "rows": 1,
+          "product_show_saved_amount": true,
           "product_show_compare_at_price": false
         }
       }
     },
     "content_for_index": [
-      "16346119217a683e17"
+      "16346119217a683e17",
+      "16597060211907b6f9",
+      "16558606101bfe642c"
     ]
   },
   "presets": {

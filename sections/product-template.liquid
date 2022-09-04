@@ -23,6 +23,8 @@
       }
       .variantDisplay Select{width: 95%;max-width: 95%;}
       .priceDisplay ul{width: 95%;max-width: 95%;}
+      .instructions {}
+      .instructions img {width:"100px";height:"100px"}
     </style>
     {% if section.settings.product_quantity_enable == false %}
       <style>
@@ -90,32 +92,62 @@
               {% endfor %}
               </div>
             </div>
-            {% if product.metafields.attributes.Included %}
-            <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-            <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Included</span></div>
-             <div class="grid-item  large--nine-twelfths text-center">{{ product.metafields.attributes.Included | metafield_tag }}</div>
-            </div>     
-          {% endif %}
+            
+            
           {% if product.metafields.attributes.instructions %}
-            <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-            <div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>Instructions</span></div>
-             <div class="grid-item  large--nine-twelfths text-center"><span style="height:150px;">{{ product.metafields.attributes.instructions | metafield_tag }}</span></div>
-            </div>     
+            <div style="font-weight:600;">Instructions</div>
+            <div style="border-bottom:.125em solid #808080;font-weight:600;">
+             <a target="_blank" href="{{ product.metafields.attributes.instructions | file_url }}">
+              <img style="width:50px;height:50px;" src="https://res-1.cdn.office.net:443/files/fabric-cdn-prod_20220127.003/assets/item-types/20/pdf.svg" />
+            </a>              
+            </div>
           {% endif %}
-              {% if product.metafields.attributes.size > 1 %}
+          {% if product.metafields.attributes['Included'] %}
+               <div style="font-weight:400;">Includes</div>
+              <div>
+                  {% assign includedItems=product.metafields.attributes.Included.value.items %}
+                  {%  for v in includedItems %}
+                    <div style="font-size:14px;border-bottom:1px solid #808080;"><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
+                    {% endfor %}
+              </div>
+            
+            {% endif %}
           
-          
-    		      {% for mf in product.metafields.attributes %}
-              <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
-             	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
-                <div class="grid-item  large--nine-twelfths text-center"><span>{{ mf | last }}</span></div>
-           	  </div>
-              {%endfor %} 
+          {% if product.metafields.attributes['Ingredients'] %}
+             {% assign ingredients=product.metafields.attributes.Ingredients.value %}
+              {% for ingredient in ingredients %}
+              <div class="grid" style="font-size:14px;border-bottom:.125em solid #808080;">   
+              <div class="grid-item  large--three-twelfths text-center" >{{ ingredient | first | upcase }}</div>
+                <div class="grid-item  large--nine-twelfths text-center">                        
+                          {% assign val = ingredient | last %}
+                          {% for v in val %}
+                            <div><a target="_blank" href="{{ v.url }}">{{ v.title }}</a></div>
+                           {% endfor %}                        
+                </div>
+                </div>
+              {% endfor %}
+            {% endif %}
+            
+            
+            {% comment %}
+              {% if product.metafields.attributes.size > 1 %} 
+    		      {%- for mf in product.metafields.attributes -%}
+                    <div>{{ mf.type }}</div>
+                    {% assign mf_lbl = mf | first %}
+                    {% assign mflbl = mf | upcase %}
+                    {% if mflbl == 'INGREDIENTS' or mflbl  == 'INGREDIENT_LIST' or mflbl == 'INSTRUCTIONS' or mflbl == 'Included' %} 
+                    {% else %}
+                    <div class="grid" style="border-bottom:1px solid #808080;font-size:14px">   
+                   	<div class="grid-item  large--three-twelfths text-center" style="font-weight:600;"><span>{{ mf | first }}</span></div>
+                    <div class="grid-item  large--nine-twelfths text-center"><span>{{ mf | last }}</span></div>
+                    {% endif %}
+             	  </div>
+              {%- endfor -%} 
               
            
             
             {% endif %}  
-              
+              {% endcomment %}
               
             </div>
     
@@ -139,7 +171,7 @@
           
             {% assign c = collections | where: "title", product.vendor %}
        		{% if c[0] %}
-            {{ c[0].image | img_url: '200x200'| img_tag }}
+            {{ c[0].image | img_url: '150x150'| img_tag }}
 			{% endif %}
           <h1 class="h2" itemprop="name">{{ product.title }}</h1>
           
