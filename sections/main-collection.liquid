@@ -23,17 +23,12 @@
 
       
       {% if collection.description != blank %}
-<<<<<<< HEAD
         <header class="section-header" style="text-align: center;>
           <div class="grid">
             <div class="grid--item-one-sixth">
               <img src="{{collection.image | img_url:"small"}}">
             </div>
             <div class="grid-item-five-siths">
-=======
-        <header class="section-header" style="text-align:center;">
-          
->>>>>>> 701512dde8d6cc924ad945ea83f12940c9c16bb4
             <h1 class="section-header--title h1"><a href="{{ collection.meta.homepage }}">{{ collection.title }}</a></h1>
             <div class="rte rte--header">
               {{ collection.description }}
