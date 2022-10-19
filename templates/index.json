@@ -3,7 +3,7 @@
     "first": {
       "type": "collection-rows",
       "settings": {
-        "title": "Discount Code S'MORES Save on Kits",
+        "title": "Discount Code S'MORES Save 15% on Kits",
         "home_featured_row": "ingredient-kits",
         "grid": 5,
         "rows": 1,
