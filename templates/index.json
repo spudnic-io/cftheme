@@ -1,41 +1,30 @@
 {
-    "sections": {
-      "first": {
-        "type": "collection-rows",
-            "settings": {
-              "title": "More Kits for the Mash",
-              "home_featured_row": "ingredient-kits",
-              "grid": 5,
-              "rows": 1,
-              "product_show_saved_amount": false,
-              "product_show_compare_at_price": false
-            }
-      },
-      "second": {
-        "type": "collection-rows",
-        "settings": {
-            "title": "Maybe Another Fermenter",
-            "home_featured_row": "equipment-kits",
-            "grid": 4,
-            "rows": 1,
-            "product_show_saved_amount": true,
-            "product_show_compare_at_price": false
-          }
-      },
-      "third": {
-        "type": "collection-rows",
-        "settings": {
-            "title": "You Still Need more Ingredients",
-            "home_featured_row": "brewering-grains-extracts",
-            "grid": 3,
-            "rows": 2,
-            "product_show_saved_amount": true,
-            "product_show_compare_at_price": false
-          }
+  "sections": {
+    "first": {
+      "type": "collection-rows",
+      "settings": {
+        "title": "After a Night of Heavy Metal, Time to be responsible & get back to brewing! ",
+        "home_featured_row": "after-a-night-of-metal",
+        "grid": 5,
+        "rows": 2,
+        "product_show_saved_amount": false,
+        "product_show_compare_at_price": false
       }
     },
-    "order": [
-      "first","second","third"
-    ]
-  }
-  
+    "third": {
+      "type": "collection-rows",
+      "settings": {
+        "title": "You Still Need more Ingredients",
+        "home_featured_row": "brewering-grains-extracts",
+        "grid": 3,
+        "rows": 2,
+        "product_show_saved_amount": true,
+        "product_show_compare_at_price": false
+      }
+    }
+  },
+  "order": [
+    "first",
+    "third"
+  ]
+}
