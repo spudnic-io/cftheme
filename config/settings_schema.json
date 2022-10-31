@@ -30,7 +30,7 @@
     },
     "settings": [
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Generelt",
           "de": "Allgemein",
@@ -283,19 +283,19 @@
         }
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Overskrift",
-          "de": "Header",
-          "en": "Header",
+          "de": "main-header",
+          "en": "main-header",
           "es": "Encabezado",
           "fi": "Ylätunniste",
           "fr": "En-tête",
           "hi": "हैडर",
-          "it": "Header",
+          "it": "main-header",
           "ja": "ヘッダー",
           "ko": "헤더",
-          "nb": "Header",
+          "nb": "main-header",
           "nl": "Koptekst",
           "pt-BR": "Cabeçalho",
           "pt-PT": "Cabeçalho",
@@ -431,7 +431,7 @@
         "default": "#fff"
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Tekst",
           "de": "Text",
@@ -524,7 +524,7 @@
         }
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Sidefod",
           "de": "Fußzeile",
@@ -646,7 +646,7 @@
     },
     "settings": [
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Basistypografier",
           "de": "Basisstile",
@@ -835,7 +835,7 @@
         ]
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Overskriftstypografier",
           "de": "Überschriftstile",
@@ -907,7 +907,7 @@
         }
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Typografier for navigation og knapper",
           "de": "Navigations- und Schaltflächenstile",
@@ -1543,7 +1543,7 @@
     },
     "settings": [
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Billede til deling på sociale medier",
           "de": "Social-Sharing-Bild",
@@ -1610,7 +1610,7 @@
         }
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Konti",
           "de": "Konten",
@@ -2073,7 +2073,7 @@
         }
       },
       {
-        "type": "header",
+        "type": "main-header",
         "content": {
           "da": "Deling",
           "de": "Teilen",
