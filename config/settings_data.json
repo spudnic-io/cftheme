@@ -385,13 +385,6 @@
       "type_navigation_transform": true,
       "superscript_decimals": true,
       "sections": {
-        "main-header": {
-          "type": "header",
-          "settings": {
-            "logo": "",
-            "logo_max_width": "305"
-          }
-        },
         "footer": {
           "type": "footer",
           "blocks": {
