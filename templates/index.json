@@ -15,7 +15,7 @@
       "type": "collection-rows",
       "settings": {
         "title": "You Still Need more Ingredients",
-        "home_featured_row": "brewering-grains-extracts",
+        "home_featured_row": "ingredients-1",
         "grid": 3,
         "rows": 3,
         "product_show_saved_amount": true,
