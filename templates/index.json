@@ -16,8 +16,8 @@
       "settings": {
         "title": "You Still Need more Ingredients",
         "home_featured_row": "ingredients-1",
-        "grid": 3,
-        "rows": 3,
+        "grid": 5,
+        "rows": 4,
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
       }
