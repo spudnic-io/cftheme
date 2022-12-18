@@ -3,10 +3,10 @@
     "first": {
       "type": "collection-rows",
       "settings": {
-        "title": "Extracts Great way to start brewing!  Or if your just lazy today  - Cheers!",
-        "home_featured_row": "misc",
-        "grid": 3,
-        "rows": 1,
+        "title": "Kits a Plenty for the holiday brew",
+        "home_featured_row": "ingredient-kits",
+        "grid": 5,
+        "rows": 2,
         "product_show_saved_amount": false,
         "product_show_compare_at_price": false
       }
