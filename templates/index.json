@@ -14,10 +14,10 @@
     "third": {
       "type": "collection-rows",
       "settings": {
-        "title": "You Still Need more Ingredients",
-        "home_featured_row": "ingredients-1",
-        "grid": 4,
-        "rows": 4,
+        "title": "All Grain have a little more fun in your brew",
+        "home_featured_row": "all-grain",
+        "grid": 5,
+        "rows": 1,
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
       }
