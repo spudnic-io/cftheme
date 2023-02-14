@@ -21,10 +21,22 @@
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
       }
+    },
+    "76ecc9f3-0b49-4849-a18b-70b3bffd8861": {
+      "type": "collection-rows",
+      "settings": {
+        "title": "Equipment Gets You Started",
+        "home_featured_row": "equipment-kits",
+        "grid": 4,
+        "rows": 1,
+        "product_show_saved_amount": true,
+        "product_show_compare_at_price": false
+      }
     }
   },
   "order": [
     "first",
-    "third"
+    "third",
+    "76ecc9f3-0b49-4849-a18b-70b3bffd8861"
   ]
 }
