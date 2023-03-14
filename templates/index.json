@@ -3,10 +3,10 @@
     "first": {
       "type": "collection-rows",
       "settings": {
-        "title": "Extracts Great to Start With",
-        "home_featured_row": "misc",
-        "grid": 3,
-        "rows": 1,
+        "title": "CraftMyOwn",
+        "home_featured_row": "skipthetaxes",
+        "grid": 5,
+        "rows": 3,
         "product_show_saved_amount": false,
         "product_show_compare_at_price": false
       }
