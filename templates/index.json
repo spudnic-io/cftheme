@@ -6,7 +6,7 @@
         "title": "CraftMyOwn",
         "home_featured_row": "skipthetaxes",
         "grid": 5,
-        "rows": 3,
+        "rows": 2,
         "product_show_saved_amount": false,
         "product_show_compare_at_price": false
       }
@@ -14,8 +14,8 @@
     "third": {
       "type": "collection-rows",
       "settings": {
-        "title": "All Grain have a little more fun in your brew",
-        "home_featured_row": "all-grain",
+        "title": "Kits get 7% off as well",
+        "home_featured_row": "ingredient-kits",
         "grid": 5,
         "rows": 1,
         "product_show_saved_amount": true,
