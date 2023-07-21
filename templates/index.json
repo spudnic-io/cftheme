@@ -14,7 +14,7 @@
     "third": {
       "type": "collection-rows",
       "settings": {
-        "title": "Some Ingredients",
+        "title": "Yeast the magical fermentation starter",
         "home_featured_row": "yeast",
         "grid": 5,
         "rows": 1,
