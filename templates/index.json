@@ -25,7 +25,7 @@
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
       "type": "collection-rows",
       "settings": {
-        "title": "Featured collection",
+        "title": "Ingredient Kits",
         "home_featured_row": "ingredient-kits",
         "grid": 4,
         "rows": 1,
