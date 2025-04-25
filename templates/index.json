@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "collection_rows_9aXXjM": {
+      "type": "collection-rows",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Prepared Foods",
+        "home_featured_row": "prepared-food",
+        "grid": 5,
+        "rows": 1,
+        "product_show_saved_amount": true,
+        "product_show_compare_at_price": false
+      }
+    },
     "featured_product_jRzzbV": {
       "type": "featured-product",
       "name": "Featured product",
@@ -32,17 +44,6 @@
         "product_show_compare_at_price": false
       }
     },
-    "third": {
-      "type": "collection-rows",
-      "settings": {
-        "title": "Yeast the magical fermentation starter",
-        "home_featured_row": "yeast",
-        "grid": 5,
-        "rows": 1,
-        "product_show_saved_amount": false,
-        "product_show_compare_at_price": false
-      }
-    },
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
       "type": "collection-rows",
       "settings": {
@@ -53,12 +54,24 @@
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
       }
+    },
+    "third": {
+      "type": "collection-rows",
+      "settings": {
+        "title": "Yeast the magical fermentation starter",
+        "home_featured_row": "yeast",
+        "grid": 5,
+        "rows": 1,
+        "product_show_saved_amount": false,
+        "product_show_compare_at_price": false
+      }
     }
   },
   "order": [
+    "collection_rows_9aXXjM",
     "featured_product_jRzzbV",
     "first",
-    "third",
-    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39"
+    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39",
+    "third"
   ]
 }
