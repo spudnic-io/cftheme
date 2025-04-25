@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_primary": "#808080",
@@ -25,15 +34,15 @@
     "type_navigation_transform": true,
     "type_button_size": "14px",
     "type_button_transform": true,
-    "favicon": "shopify:\/\/shop_images\/CF_1_1_ffca5363-5b0a-4bd0-bdd7-c04c59b9cb5b.png",
+    "favicon": "shopify://shop_images/CF_1_1_ffca5363-5b0a-4bd0-bdd7-c04c59b9cb5b.png",
     "cart_notes_enable": true,
     "ajax_cart_method": "modal",
-    "share_image": "shopify:\/\/shop_images\/CF1_1_2.png",
-    "social_twitter_link": "https:\/\/twitter.com\/CFermentations",
-    "social_facebook_link": "https:\/\/www.facebook.com\/craftedfermentations\/",
-    "social_pinterest_link": "https:\/\/www.pinterest.ca\/CraftedFermentation\/",
+    "share_image": "shopify://shop_images/CF1_1_2.png",
+    "social_twitter_link": "https://twitter.com/CFermentations",
+    "social_facebook_link": "https://www.facebook.com/craftedfermentations/",
+    "social_pinterest_link": "https://www.pinterest.ca/CraftedFermentation/",
     "social_google_plus_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/craftedfermentations\/",
+    "social_instagram_link": "https://www.instagram.com/craftedfermentations/",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
     "social_youtube_link": "",
@@ -45,7 +54,7 @@
     "share_pinterest": true,
     "superscript_decimals": true,
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/CF1_1_2.png",
+    "checkout_logo_image": "shopify://shop_images/CF1_1_2.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
@@ -64,11 +73,11 @@
         "type": "main-header",
         "settings": {
           "menu": "main-menu",
-          "logo": "shopify:\/\/shop_images\/MainLogoCropped.png",
+          "logo": "shopify://shop_images/MainLogoCropped.png",
           "logo_max_width": "175",
           "show_announcement": false,
           "announcement_text": "Crafted Fermentations News!",
-          "announcement_link": "shopify:\/\/blogs\/news"
+          "announcement_link": "shopify://blogs/news"
         }
       },
       "footer": {
@@ -86,7 +95,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "subtext": "<p>We promise not to overly spam your mail box but occasionally send you a deal!<\/p>",
+              "subtext": "<p>We promise not to overly spam your mail box but occasionally send you a deal!</p>",
               "width": "50%"
             }
           },
@@ -94,7 +103,7 @@
             "type": "text",
             "settings": {
               "title": "Get in touch",
-              "richtext": "<p><a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a><\/p>",
+              "richtext": "<p><a href=\"/pages/contact\" title=\"Contact\">Contact Us</a></p>",
               "width": "16%"
             }
           }
@@ -168,14 +177,14 @@
     ],
     "blocks": {
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#a77c3f",
           "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "button_text": "chat_with_us",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       }
@@ -248,7 +257,7 @@
               "type": "text",
               "settings": {
                 "title": "Get in touch",
-                "richtext": "<p>Use this text to share information about your brand with your customers.<\/p>",
+                "richtext": "<p>Use this text to share information about your brand with your customers.</p>",
                 "width": "50%"
               }
             },
@@ -325,8 +334,7 @@
             "collection-list-0",
             "collection-list-1"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "collection-row-1": {
           "type": "collection-rows",
@@ -414,7 +422,7 @@
               "type": "text",
               "settings": {
                 "title": "Get in touch",
-                "richtext": "<p>Use this text to share information about your brand with your customers.<\/p>",
+                "richtext": "<p>Use this text to share information about your brand with your customers.</p>",
                 "width": "50%"
               }
             },
@@ -475,8 +483,7 @@
             "collection-list-0",
             "collection-list-1"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "collection-row-1": {
           "type": "collection-rows",
@@ -504,8 +511,7 @@
         },
         "featured-content": {
           "type": "featured-content",
-          "settings": {
-          }
+          "settings": {}
         },
         "slideshow-2": {
           "type": "slideshow",
