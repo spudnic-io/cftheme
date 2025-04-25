@@ -52,7 +52,7 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "superscript_decimals": true,
+    "superscript_decimals": false,
     "checkout_header_image": "",
     "checkout_logo_image": "shopify://shop_images/CF1_1_2.png",
     "checkout_logo_position": "left",
