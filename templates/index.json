@@ -13,10 +13,10 @@
       "type": "collection-rows",
       "name": "Featured collection",
       "settings": {
-        "title": "Specialty Items From our Kitchen to Yours!",
-        "home_featured_row": "prepared-food",
+        "title": "The Peoples Church Farmers Market - Visit us at 374 Sheppard Ave Weekly Fridays 9am-4am",
+        "home_featured_row": "peoples-church-farmers-market",
         "grid": 5,
-        "rows": 1,
+        "rows": 2,
         "product_show_saved_amount": false,
         "product_show_compare_at_price": false
       }
