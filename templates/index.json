@@ -32,17 +32,6 @@
         "product_show_compare_at_price": false
       }
     },
-    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
-      "type": "collection-rows",
-      "settings": {
-        "title": "Ingredient Kits",
-        "home_featured_row": "ingredient-kits",
-        "grid": 4,
-        "rows": 1,
-        "product_show_saved_amount": true,
-        "product_show_compare_at_price": false
-      }
-    },
     "collection_rows_Fkw9mN": {
       "type": "collection-rows",
       "name": "Featured collection",
@@ -50,6 +39,17 @@
         "title": "Aphra's Delights- A little taste of Persia in Canada",
         "home_featured_row": "aphras-delights",
         "grid": 5,
+        "rows": 1,
+        "product_show_saved_amount": true,
+        "product_show_compare_at_price": false
+      }
+    },
+    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
+      "type": "collection-rows",
+      "settings": {
+        "title": "Ingredient Kits",
+        "home_featured_row": "ingredient-kits",
+        "grid": 4,
         "rows": 1,
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
@@ -70,8 +70,8 @@
   "order": [
     "collection_rows_9aXXjM",
     "first",
-    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39",
     "collection_rows_Fkw9mN",
+    "8750a9b8-0b52-4475-9fa9-9ed4cca25f39",
     "third"
   ]
 }
