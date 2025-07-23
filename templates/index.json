@@ -21,6 +21,18 @@
         "product_show_compare_at_price": false
       }
     },
+    "collection_rows_Fkw9mN": {
+      "type": "collection-rows",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Aphra's Delights- A little taste of Persia in Canada",
+        "home_featured_row": "aphras-delights",
+        "grid": 4,
+        "rows": 1,
+        "product_show_saved_amount": true,
+        "product_show_compare_at_price": false
+      }
+    },
     "first": {
       "type": "collection-rows",
       "settings": {
@@ -32,24 +44,12 @@
         "product_show_compare_at_price": false
       }
     },
-    "collection_rows_Fkw9mN": {
-      "type": "collection-rows",
-      "name": "Featured collection",
-      "settings": {
-        "title": "Aphra's Delights- A little taste of Persia in Canada",
-        "home_featured_row": "aphras-delights",
-        "grid": 5,
-        "rows": 1,
-        "product_show_saved_amount": true,
-        "product_show_compare_at_price": false
-      }
-    },
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
       "type": "collection-rows",
       "settings": {
-        "title": "Ingredient Kits",
-        "home_featured_row": "ingredient-kits",
-        "grid": 4,
+        "title": "Pickle & Brine It",
+        "home_featured_row": "pickeling-fermentation",
+        "grid": 3,
         "rows": 1,
         "product_show_saved_amount": true,
         "product_show_compare_at_price": false
@@ -60,7 +60,7 @@
       "settings": {
         "title": "Yeast the magical fermentation starter",
         "home_featured_row": "yeast",
-        "grid": 5,
+        "grid": 3,
         "rows": 1,
         "product_show_saved_amount": false,
         "product_show_compare_at_price": false
@@ -69,8 +69,8 @@
   },
   "order": [
     "collection_rows_9aXXjM",
-    "first",
     "collection_rows_Fkw9mN",
+    "first",
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39",
     "third"
   ]
