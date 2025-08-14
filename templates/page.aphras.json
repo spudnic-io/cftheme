@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "aphras",
+      "type": "page-aphras",
       "settings": {}
     }
   },
