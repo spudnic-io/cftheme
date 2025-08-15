@@ -3,9 +3,23 @@
     <img src="https://cdn.shopify.com/s/files/1/0314/6979/7515/files/Logo_V2_1.png?v=1753808379" alt="" style="width: 25%; height: auto;" height="auto">
   </div>
 
-  <div class="aphras-content">
-    {{ page.content }}
+ 
+<div class="aphras-content">
+    {{ page.metafields.custom.content_block | metafield_tag }}
   </div>
+
+  {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
+  {% if collection_ref %}
+    <div class="aphras-products">
+      <h2>Featured Products</h2>
+      <ul>
+        {% for product in collection_ref.products %}
+          <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
 
   <div class="aphras-footer">
     &copy; {{ 'now' | date: "%Y" }} Aphras. All rights reserved.
