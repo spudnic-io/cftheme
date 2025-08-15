@@ -1,0 +1,37 @@
+{% assign collection_ref = page.metafields.custom.assigned_collection.value %}
+
+{% if collection_ref %}
+  <div class="aphras-products grid">
+    {% for product in collection_ref.products %}
+      <div class="product-card">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
+          <h3>{{ product.title }}</h3>
+        </a>
+        <p>{{ product.price | money }}</p>
+
+        <form method="post" action="/cart/add">
+          {% if product.variants.size > 1 %}
+            <label for="variant-select-{{ product.id }}">Choose an option:</label>
+            <select name="id" id="variant-select-{{ product.id }}">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+              {% endfor %}
+            </select>
+          {% else %}
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+          {% endif %}
+
+          <button type="submit">Add to Cart</button>
+        </form>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+<style>.product-card select {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  font-size: 1em;
+}
+</style>
