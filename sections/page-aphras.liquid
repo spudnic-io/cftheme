@@ -6,7 +6,7 @@
  
 <div class="aphras-content">
     {{ page.metafields.custom.content_block | metafield_tag }}
-  </div>
+  
 
   {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
   {% if collection_ref %}
@@ -18,7 +18,7 @@
       </ul>
     </div>
   {% endif %}
-
+</div>
 
   <div class="aphras-footer">
     &copy; {{ 'now' | date: "%Y" }} Aphras. All rights reserved.
