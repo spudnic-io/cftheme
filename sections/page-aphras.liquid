@@ -28,9 +28,11 @@
   {% else %}
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
   {% endif %}
-
+<div>
   <label for="quantity-{{ product.id }}">Quantity:</label>
+  </div><div>
   <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
+  </div>
 
   <button type="submit">Add to Cart</button>
 </form>
@@ -155,7 +157,7 @@
   .aphras-product-card input[type="number"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
