@@ -11,7 +11,6 @@
   {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
   {% if collection_ref %}
     <div class="aphras-products">
-      <h2>Featured Products</h2>
       <ul>
         {% for product in collection_ref.products %}
           <li><a href="{{ product.url }}">{{ product.title }}</a></li>
