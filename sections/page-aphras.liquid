@@ -28,9 +28,9 @@
   {% else %}
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
   {% endif %}
-<div>
+<div class="qty">
   <label for="quantity-{{ product.id }}">Quantity:</label>
-  </div><div>
+  </div><div class="qty">
   <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
   </div>
 
@@ -133,7 +133,7 @@
     text-align: center;
     font-family: 'Helvetica Neue', sans-serif;
   }
-  .aphras-product-card div {
+  .aphras-product-card .qty {
     text-align:center;
     margin:auto auto;
     padding:5px;
