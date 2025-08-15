@@ -17,23 +17,24 @@
         <h3>{{ product.title }}</h3>
         <p class="price">{{ product.price | money }}</p>
 
-        <form method="post" action="/cart/add">
-          {% if product.variants.size > 1 %}
-            <label for="variant-{{ product.id }}">Choose an option:</label>
-            <select name="id" id="variant-{{ product.id }}">
-              {% for variant in product.variants %}
-                <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
-              {% endfor %}
-            </select>
-          {% else %}
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          {% endif %}
+        <form class="ajax-add-to-cart-form" data-product-id="{{ product.id }}">
+  {% if product.variants.size > 1 %}
+    <label for="variant-{{ product.id }}">Choose an option:</label>
+    <select name="id" id="variant-{{ product.id }}">
+      {% for variant in product.variants %}
+        <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+      {% endfor %}
+    </select>
+  {% else %}
+    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+  {% endif %}
 
-          <label for="quantity-{{ product.id }}">Quantity:</label>
-          <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
+  <label for="quantity-{{ product.id }}">Quantity:</label>
+  <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
 
-          <button type="submit">Add to Cart</button>
-        </form>
+  <button type="submit">Add to Cart</button>
+</form>
+
       </div>
     {% endfor %}
   </div>
@@ -47,19 +48,27 @@
   </div>
 </section>
 
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.ajax-add-to-cart').forEach(function (form) {
+    document.querySelectorAll('.ajax-add-to-cart-form').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const formData = new FormData(form);
+
         fetch('/cart/add.js', {
           method: 'POST',
           body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
         })
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
         .then(data => {
           alert(`${data.title} added to cart!`);
           // Optionally update cart UI here
@@ -72,6 +81,8 @@
     });
   });
 </script>
+
+
 
 
 <style>
