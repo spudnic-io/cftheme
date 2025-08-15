@@ -5,43 +5,50 @@
 
  
 <div class="aphras-content">
-    {{ page.metafields.custom.content_block | metafield_tag }}
-  
-
-  {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
-  {% if collection_ref %}
-   {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
+ {% assign collection_ref = page.metafields.custom.assigned_collection.value %}
 
 {% if collection_ref %}
-  <div class="aphras-products grid">
-    {% for product in collection_ref.products %}
-      <div class="product-card">
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
-          <h3>{{ product.title }}</h3>
-        </a>
-        <p>{{ product.price | money }}</p>
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for product in collection_ref.products %}
+        <div class="col">
+          <div class="card h-100">
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | image_url: width: 600 }}" class="card-img-top" alt="{{ product.title }}">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <p class="card-text">{{ product.price | money }}</p>
 
-        <form method="post" action="/cart/add">
-          {% if product.variants.size > 1 %}
-            <label for="variant-select-{{ product.id }}">Choose an option:</label>
-            <select name="id" id="variant-select-{{ product.id }}">
-              {% for variant in product.variants %}
-                <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
-              {% endfor %}
-            </select>
-          {% else %}
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          {% endif %}
+              <form method="post" action="/cart/add">
+                {% if product.variants.size > 1 %}
+                  <div class="mb-3">
+                    <label for="variant-{{ product.id }}" class="form-label">Choose an option:</label>
+                    <select name="id" id="variant-{{ product.id }}" class="form-select">
+                      {% for variant in product.variants %}
+                        <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% else %}
+                  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                {% endif %}
 
-          <button type="submit">Add to Cart</button>
-        </form>
-      </div>
-    {% endfor %}
+                <div class="mb-3">
+                  <label for="quantity-{{ product.id }}" class="form-label">Quantity:</label>
+                  <input type="number" name="quantity" id="quantity-{{ product.id }}" class="form-control" value="1" min="1">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 {% endif %}
 
-  {% endif %}
 </div>
 
   <div class="aphras-footer">
