@@ -28,9 +28,9 @@
   {% else %}
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
   {% endif %}
-<div>
+<div style="text-align:center;">
   <label for="quantity-{{ product.id }}">Quantity:</label>
-  </div><div>
+  
   <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
   </div>
 
