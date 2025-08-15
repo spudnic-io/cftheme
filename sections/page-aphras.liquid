@@ -28,9 +28,9 @@
   {% else %}
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
   {% endif %}
-<div style="text-align:center">
+<div>
   <label for="quantity-{{ product.id }}">Quantity:</label>
-  </div><div style="text-align:center">
+  </div><div>
   <input type="number" name="quantity" id="quantity-{{ product.id }}" value="1" min="1">
   </div>
 
@@ -135,6 +135,7 @@
   }
   .aphras-product-card div {
     text-align:center;
+    margin:auto auto;
   }
   .aphras-product-card img {
     max-width: 100%;
