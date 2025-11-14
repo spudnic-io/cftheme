@@ -21,29 +21,6 @@
         "product_show_compare_at_price": false
       }
     },
-    "collection_rows_Fkw9mN": {
-      "type": "collection-rows",
-      "name": "Featured collection",
-      "settings": {
-        "title": "Aphra's Delights- A little taste of Persia in Canada",
-        "home_featured_row": "aphras-delights",
-        "grid": 4,
-        "rows": 1,
-        "product_show_saved_amount": true,
-        "product_show_compare_at_price": false
-      }
-    },
-    "first": {
-      "type": "collection-rows",
-      "settings": {
-        "title": "From our Kitchen to yours",
-        "home_featured_row": "prepared-food",
-        "grid": 4,
-        "rows": 1,
-        "product_show_saved_amount": false,
-        "product_show_compare_at_price": false
-      }
-    },
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39": {
       "type": "collection-rows",
       "settings": {
@@ -55,23 +32,22 @@
         "product_show_compare_at_price": false
       }
     },
-    "third": {
+    "collection_rows_Fkw9mN": {
       "type": "collection-rows",
+      "name": "Featured collection",
       "settings": {
-        "title": "Yeast the magical fermentation starter",
-        "home_featured_row": "yeast",
-        "grid": 3,
-        "rows": 1,
-        "product_show_saved_amount": false,
+        "title": "Aphra's Delights- A little taste of Persia in Canada",
+        "home_featured_row": "aphras-delights",
+        "grid": 4,
+        "rows": 2,
+        "product_show_saved_amount": true,
         "product_show_compare_at_price": false
       }
     }
   },
   "order": [
     "collection_rows_9aXXjM",
-    "collection_rows_Fkw9mN",
-    "first",
     "8750a9b8-0b52-4475-9fa9-9ed4cca25f39",
-    "third"
+    "collection_rows_Fkw9mN"
   ]
 }
