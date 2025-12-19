@@ -1,6 +1,6 @@
 <section class="aphras-section">
   <div class="aphras-header">
-  <div style="width:20%;">aslf;j;ljdkaf</div>
+  <div style="width:20%;"></div>
   <div style="width:40%;">
     {% assign header_graphic = page.metafields.custom.assigned_image %}
     {%  if header_graphic %}
@@ -9,7 +9,7 @@
     <img src="https://cdn.shopify.com/s/files/1/0314/6979/7515/files/Logo_V2_1.png?v=1753808379" alt="" style="width: 100%; height: auto;" height="auto" />
     {%  endif %}
     </div>
-    <div style="width:20%;">a;lksdj;falkdsj</div>
+    <div style="width:20%;"></div>
   </div>
 
  
@@ -115,6 +115,8 @@
     padding: 5px;
     text-align: center;
     display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 4px;
   }
 
   .aphras-content {
