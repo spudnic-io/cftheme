@@ -143,10 +143,16 @@
 
   .aphras-footer {
     background-color: #A81E2A;
-    text-align: center;
+    
     padding: 20px;
     font-size: 0.9em;
     color: #FFFFFF;
+     display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  gap: 4px;
+  width:100%;
+  grid-auto-rows:minmax(120px, auto);
+  align-items:center;
   }
   .aphras-footer .address {
     font-weight:bolder;
