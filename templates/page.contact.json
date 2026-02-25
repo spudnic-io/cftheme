@@ -1,11 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "sections":{
-    "main":{
-      "type":"page-contact",
-      "settings":{}
+  "sections": {
+    "main": {
+      "type": "page-contact",
+      "settings": {}
+    },
+    "map_JGdzUc": {
+      "type": "map",
+      "name": "Map",
+      "settings": {
+        "heading": "Merchants Market",
+        "address": "<p>1921 Eglinton Ave East <br/>Toronto, Canada<br/><br/>Saturday, 10am - 6pm<br/>Sunday, 10am - 6pm</p>",
+        "map_address": "1921 Eglinton Ave East",
+        "button": "Directions",
+        "show_pin": true,
+        "api_key": "",
+        "image": "shopify://shop_images/Cookies_N_Kits.png",
+        "position": "top center"
+      }
+    },
+    "map_TLFecm": {
+      "type": "map",
+      "name": "Map",
+      "settings": {
+        "heading": "Home Office",
+        "address": "<p>26 Fenelon Drive<br/>Toronto, Canada</p><p>Mon - Fri, 10-4 Call First<br/></p>",
+        "map_address": "80 Spadina Ave, Toronto",
+        "button": "Directions",
+        "show_pin": true,
+        "api_key": "",
+        "image": "shopify://shop_images/Cookies_N_Kits.png",
+        "position": "center center"
+      }
     }
   },
-  "order":[
-    "main"
+  "order": [
+    "main",
+    "map_JGdzUc",
+    "map_TLFecm"
   ]
 }
