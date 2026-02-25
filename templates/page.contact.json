@@ -32,8 +32,8 @@
       "name": "Map",
       "settings": {
         "heading": "Home Office",
-        "address": "<p>26 Fenelon Drive<br/>Toronto, Canada</p><p>Mon - Fri, 10-4 Call First<br/></p>",
-        "map_address": "80 Spadina Ave, Toronto",
+        "address": "<p>26 Fenelon Drive<br/>Toronto, Canada<br/>1 437-900-0579<br/>Mon - Fri, 10-4 Call First<br/></p>",
+        "map_address": "26 Fenelon Drive",
         "button": "Directions",
         "show_pin": true,
         "api_key": "",
