@@ -18,7 +18,7 @@
       "name": "Map",
       "settings": {
         "heading": "Merchants Market",
-        "address": "<p>1921 Eglinton Ave East <br/>Toronto, Canada<br/><br/>Saturday, 10am - 6pm<br/>Sunday, 10am - 6pm</p>",
+        "address": "<p>1921 Eglinton Ave East <br/>Isle 1 Booth 546<br/>Toronto, Canada<br/>437-900-0579<br/>Saturday, 10am - 6pm<br/>Sunday, 10am - 6pm</p>",
         "map_address": "1921 Eglinton Ave East",
         "button": "Directions",
         "show_pin": true,
@@ -32,7 +32,7 @@
       "name": "Map",
       "settings": {
         "heading": "Home Office",
-        "address": "<p>26 Fenelon Drive<br/>Toronto, Canada<br/>1 437-900-0579<br/>Mon - Fri, 10-4 Call First<br/></p>",
+        "address": "<p>26 Fenelon Drive<br/>Toronto, Canada<br/>437-900-0579<br/>Mon - Fri, 10-4 Call First<br/></p>",
         "map_address": "26 Fenelon Drive",
         "button": "Directions",
         "show_pin": true,
