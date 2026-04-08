@@ -1,16 +1,29 @@
 <section class="aphras-section">
-  <div class="aphras-header">
-  <div><a href="mailto:info@aphras.recipes">info@aphras.recipes</a></div>
-  <div >
-    {% assign header_graphic = page.metafields.custom.assigned_image %}
-    {%  if header_graphic %}
-      <img src="{{ header_graphic | image_url: width: 400 }}" alt="" style="width: 100%; height: auto;" height="auto" />
-    {%  else  %} 
-    <img src="https://cdn.shopify.com/s/files/1/0314/6979/7515/files/Logo_V2_1.png?v=1753808379" alt="" style="width: 100%; height: auto;" height="auto" />
-    {%  endif %}
-    </div>
-    <div><a href="https://www.instagram.com/aphras.recipes">@aphras.recipes</a></div>
+<div class="aphras-header">
+  <div class="aphras-header-left">
+    <a href="mailto:info@aphras.recipes">info@aphras.recipes</a>
   </div>
+
+  <div class="aphras-header-center">
+    {% assign header_graphic = page.metafields.custom.assigned_image %}
+    {% if header_graphic %}
+      <img
+        src="{{ header_graphic | image_url: width: 400 }}"
+        alt="Aphra's Recipes"
+      />
+    {% else %}
+      <img
+        src="https://cdn.shopify.com/s/files/1/0314/6979/7515/files/Logo_V2_1.png?v=1753808379"
+        alt="Aphra's Recipes"
+      />
+    {% endif %}
+  </div>
+
+  <div class="aphras-header-right">
+    <a href="https://www.instagram.com/aphras.recipes">@aphras.recipes</a>
+  </div>
+</div>
+
 
  
 <div class="aphras-content">
@@ -115,25 +128,47 @@
     max-width: 1920px;
   }
 
-  .aphras-header {
-    background-color: #F7F4F0;
-    padding: 5px;
+.aphras-header {
+  background-color: #F7F4F0;
+  padding: 5px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
   gap: 4px;
-  width:100%;
-  grid-auto-rows:minmax(120px, auto);
-  align-items:center;
-  }
-  .aphras-header div{
-    text-align:center;
-    font-weight:bolder;
-    font-size: 25px;
-    color: #A81E2A
-  }
-  .aphras-header div a{
-  color: #A81E2A
+  align-items: center;
+  grid-auto-rows: minmax(120px, auto);
 }
+
+.aphras-header div {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #A81E2A;
+}
+
+.aphras-header a {
+  color: #A81E2A;
+  text-decoration: none;
+}
+
+/* ✅ Mobile condense / wrap */
+@media (max-width: 768px) {
+  .aphras-header {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .aphras-header div {
+    font-size: 20px;
+  }
+
+  .aphras-header img {
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 
   .aphras-content {
     padding: 5px;
