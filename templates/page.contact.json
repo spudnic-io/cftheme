@@ -31,7 +31,7 @@
       "type": "map",
       "name": "Map",
       "settings": {
-        "heading": "Home Office",
+        "heading": "<p>Toronto-based online business<br>Orders shipped Canada-wide<br>No public access or retail at this location",
         "address": "<p></p>",
         "map_address": "",
         "button": "Directions",
