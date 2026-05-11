@@ -32,8 +32,8 @@
       "name": "Map",
       "settings": {
         "heading": "Home Office",
-        "address": "<p>Administrative and equipment pickup only<br/>26 Fenelon Drive<br/>Toronto, Canada<br/>437-900-0579<br/>Mon - Fri, 10-4 By Appointment<br/>Shop online for delivery or shipping.  <br/>Food products are prepared at approved commercial kitchen facilities.  <br/><br/><br/></p>",
-        "map_address": "26 Fenelon Drive",
+        "address": "<p></p>",
+        "map_address": "",
         "button": "Directions",
         "show_pin": true,
         "api_key": "",
