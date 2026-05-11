@@ -31,8 +31,8 @@
       "type": "map",
       "name": "Map",
       "settings": {
-        "heading": "<p>Toronto-based online business<br>Orders shipped Canada-wide<br>No public access or retail at this location",
-        "address": "<p></p>",
+        "heading": "<p>Toronto-based online business</p>",
+        "address": "<p>Orders shipped Canada-wide<br>No public access or retail at this location</p>",
         "map_address": "",
         "button": "Directions",
         "show_pin": true,
