@@ -48,19 +48,6 @@
 
 
 </head>
-{% assign parts = request.host | split: '.' %}
-
-{% if parts.size > 2 %}
-  {% assign brand = parts[1] %}
-{% else %}
-  {% assign brand = parts[0] %}
-{% endif %}
-{% case brand %}
-  {% when 'aphras' %}
-    {% assign brand_logo = settings.aphras_logo %}
-  {% else %}
-    {% assign brand_logo = settings.default_logo %}
-{% endcase %}
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ request.page_type | handle }}">
 
@@ -113,6 +100,20 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
   </ul>
 
+
+{% assign parts = request.host | split: '.' %}
+
+{% if parts.size > 2 %}
+  {% assign brand = parts[1] %}
+{% else %}
+  {% assign brand = parts[0] %}
+{% endif %}
+
+{% if request.page_type == 'index' and brand == 'aphras' %}
+  <script>
+    window.location.href = "/pages/aphras-recipes";
+  </script>
+{% endif %}
 
 </body>
 </html>
