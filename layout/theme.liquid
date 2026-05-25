@@ -48,6 +48,24 @@
 
 
 </head>
+{% assign parts = request.host | split: '.' %}
+
+{% if parts.size > 2 %}
+  {% assign brand = parts[1] %}
+{% else %}
+  {% assign brand = parts[0] %}
+{% endif %}
+{% case brand %}
+  {% when 'craftedfermentations' %}
+    {% assign brand_logo = settings.crafted_logo %}
+    {% assign brand_primary = settings.crafted_primary %}
+  {% when 'aphras' %}
+    {% assign brand_logo = settings.aphras_logo %}
+    {% assign brand_primary = settings.aphras_primary %}
+  {% else %}
+    {% assign brand_logo = settings.default_logo %}
+    {% assign brand_primary = settings.default_primary %}
+{% endcase %}
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ request.page_type | handle }}">
 
